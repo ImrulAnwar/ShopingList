@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/evName"
+            android:id="@+id/etName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -23,10 +23,10 @@
             android:layout_height="wrap_content"
             android:inputType="number|textPersonName"
             android:ems="10"
-            android:id="@+id/evAmount"
-            app:layout_constraintTop_toBottomOf="@+id/evName"
+            android:id="@+id/etAmount"
+            app:layout_constraintTop_toBottomOf="@+id/etName"
             android:layout_marginTop="36dp"
-            app:layout_constraintStart_toStartOf="@+id/evName"
+            app:layout_constraintStart_toStartOf="@+id/etName"
             android:hint="Amount"
             android:minHeight="48dp" />
 
@@ -35,8 +35,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnCancel"
-            app:layout_constraintTop_toBottomOf="@+id/evAmount"
-            app:layout_constraintStart_toStartOf="@+id/evAmount"
+            app:layout_constraintTop_toBottomOf="@+id/etAmount"
+            app:layout_constraintStart_toStartOf="@+id/etAmount"
             android:layout_marginTop="36dp" />
 
     <Button
@@ -46,6 +46,6 @@
             app:layout_constraintBottom_toBottomOf="@+id/btnCancel"
             android:id="@+id/btnAdd"
             app:layout_constraintStart_toEndOf="@+id/btnCancel"
-            app:layout_constraintEnd_toEndOf="@+id/evAmount"
+            app:layout_constraintEnd_toEndOf="@+id/etAmount"
             app:layout_constraintHorizontal_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

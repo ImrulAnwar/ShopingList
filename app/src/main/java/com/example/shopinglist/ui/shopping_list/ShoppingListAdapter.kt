@@ -1,5 +1,6 @@
 package com.example.shopinglist.ui.shopping_list
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,6 +21,11 @@ class ShoppingListAdapter(var items: List<ShoppingItem>, private val viewModel: 
 
         override fun getItemCount(): Int {
                 return items.size
+        }
+        @SuppressLint("NotifyDataSetChanged")
+        fun setData(list: List<ShoppingItem>) {
+                items = list
+                notifyDataSetChanged()
         }
 
         override fun onBindViewHolder(holder: ShoppingListViewHolder, position: Int) {
